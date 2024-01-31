@@ -71,7 +71,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name:  ${{ secrets.AZURE_APP_SERVICE_NAME }}
-          slot-name: 'Production'
+          slot-name: 'staging-slot'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_23E8392FBE5D4E6C9F9EF01719160D0F }}
           package: ${{ github.workspace }}/Nextjs-site.zip
 
