@@ -317,7 +317,7 @@ resource container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/container
 //Make formrecognizer optional
 resource formRecognizer 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   name: form_recognizer_name
-  location: locationFormRecognizer
+  location: location
   tags: tags
   kind: 'FormRecognizer'
   properties: {
