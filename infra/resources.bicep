@@ -373,7 +373,7 @@ resource deployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01
 
 resource speechService 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   name: speech_service_name
-  location: locationSpeechServices
+  location: location
   tags: tags
   kind: 'SpeechServices'
   properties: {
